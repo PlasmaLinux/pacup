@@ -8,9 +8,9 @@ EOM
     exit 2
 
 if [ `whoami` != 'root' ]; then
-    echo "sudoを先頭につけてください"
+    echo "管理者権限で実行してください"
     exit 0
 fi
 
-apt update && apt full-upgrade -y && sudo apt autoremove -y
+sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
 exit 0
