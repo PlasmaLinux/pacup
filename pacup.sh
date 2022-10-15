@@ -12,5 +12,5 @@ if [ `whoami` != 'root' ]; then
     exit 0
 fi
 
-apt update && apt full-upgrade -y && sudo apt autoremove
+apt update && apt full-upgrade -y && sudo apt autoremove -y
 exit 0
