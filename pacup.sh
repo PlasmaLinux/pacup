@@ -6,11 +6,9 @@ Usage: $(basename "$0") [OPTION]...
 EOM
 
     exit 2
-}
 
-function update_y() {
-    apt update && apt full-upgrade -y
-    sudo apt autoremove -y 
+function update_full() {
+    apt update && apt full-upgrade -y && sudo apt autoremove
     exit 0
 }
 
@@ -19,16 +17,18 @@ if [ `whoami` != 'root' ]; then
     exit 0
 fi
 
-while getopts ":h:y" optKey; do
+while getopts ":h:y:f" optKey; do
     case "$optKey" in
     	y)
     	  update_y
           ;;    	
+        f)
+          upgrade_full
+          ;;
     	'-h'|'--help'|* )
     	  usage
     	  ;;
     esac
 done
-apt update && apt full-upgrade -y
-sudo apt autoremove -y
+apt update && apt full-upgrade -y && sudo apt autoremove -y
 exit 0
