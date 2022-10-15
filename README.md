@@ -12,5 +12,5 @@ Ubuntu系のディストリで、パッケージのアップデートをする�
 ```
 https://github.com/PlasmaLinux/pacup
 cd pacup
-sudo install_pacup.sh
+sudo bash install_pacup.sh
 ```
