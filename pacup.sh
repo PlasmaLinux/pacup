@@ -19,3 +19,4 @@ fi
 
 apt update && apt full-upgrade -y && sudo apt autoremove -y
 exit 0
+
