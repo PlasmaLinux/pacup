@@ -10,6 +10,7 @@ Ubuntu系のディストリで、パッケージのアップデートをする�
 
 ## インストール方法
 ```
+sudo apt install -y git
 https://github.com/PlasmaLinux/pacup
 cd pacup
 sudo ./install_pacup.sh
