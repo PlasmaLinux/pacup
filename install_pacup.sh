@@ -5,7 +5,7 @@ if [ `whoami` != 'root' ]; then
 fi
 
 sudo cp ./pacup.sh /usr/bin/pacup
-sudo chmod +x /usr/bin/pacup
+sudo chmod 775 /usr/bin/pacup
 echo "インストールは無事に完了しました。"
 
 exit
