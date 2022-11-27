@@ -1,11 +1,11 @@
 #!/bin/bash
 if [ `whoami` != 'root' ]; then
-  echo "sudoを先頭につけてください"
+  sudo $BASH_SOURCE
   exit
 fi
 
-sudo cp ./pacup.sh /usr/bin/pacup
-sudo chmod 775 /usr/bin/pacup
+cp -f ./pacup.sh /usr/bin/pacup
+chmod +rx /usr/bin/pacup
 echo "インストールは無事に完了しました。"
 
 exit
