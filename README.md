@@ -1,12 +1,12 @@
 # pacup
 Simplify package updates
 
-Ubuntu系のディストリで、パッケージのアップデートをする際に  
+Debian系のディストロで、パッケージのアップデートをする際に  
 `sudo apt update && sudo apt full-upgrade` と入力するのを  
-`pacup` といった風に短縮するためのコマンドで。  
-更に、`sudo apt autoremove` も勝手にやってくれます。
+`pacup` といった風に短縮するためのコマンドです。  
+更に、`sudo apt autoremove` も同時に実行します。
 
-`-y` オプションは勝手に実行してくれます
+`-y` オプションは標準で設定されています｡
 
 ## インストール方法
 ```
